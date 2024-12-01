@@ -1,0 +1,13 @@
+<configuration>
+    <input>
+        <net-file>basic_railway.net.xml</net-file>
+        <route-files>basic_railway_routes.rou.xml</route-files>
+    </input>
+    <time>
+        <begin>0</begin>
+        <end>100</end>
+    </time>
+    <output>
+        <tripinfo-output>outputs/tripinfo.xml</tripinfo-output>
+    </output>
+</configuration>
