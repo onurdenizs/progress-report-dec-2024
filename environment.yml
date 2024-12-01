@@ -1,0 +1,29 @@
+name: progress_env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - bottleneck
+  - contourpy
+  - cycler
+  - fonttools
+  - kiwisolver
+  - matplotlib=3.9.2
+  - mkl-service
+  - numpy>=1.23.0 # Adjusted version to be flexible
+  - pandas
+  - pillow
+  - ply
+  - pyparsing
+  - pytz
+  - six
+  - tornado
+  - tzdata
+  - pip:
+      - sumolib
+      - traci
+      - PyQt5==5.15.10
+      - python-dateutil==2.8.2
+      - tomli==2.2.1
