@@ -21,6 +21,12 @@ dependencies:
   - six
   - tornado
   - tzdata
+  - geopandas  # Add GeoPandas for geospatial data processing
+  - shapely  # Dependency for GeoPandas
+  - fiona  # File format support for shapefiles
+  - pyproj  # Coordinate reference system management
+  - rtree  # Spatial indexing (optional but useful)
+  - gdal  # Geospatial data abstraction library (for broader file format support)
   - pip:
       - sumolib
       - traci
