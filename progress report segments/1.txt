@@ -1,0 +1,95 @@
+Progress Report: Visualization and Modeling of Swiss and French Railway Networks
+Introduction
+As part of my PhD thesis on virtual coupling in railway networks, significant progress has been made in visualizing and modeling selected railway lines from Switzerland and France. These efforts aim to create realistic representations of railway networks, enabling simulations to analyze the effects of virtual coupling strategies on operational efficiency and capacity.
+
+This report outlines the processes, datasets, challenges, and solutions for visualizing and modeling selected Swiss and French railway lines using interactive maps and preparing these networks for simulation in SUMO (Simulation of Urban MObility).
+
+Swiss Railway Network
+Selected Lines and Stations
+We selected three railway lines from the Swiss railway network:
+
+Line 500: Basel SBB to Luzern.
+Line 660: Luzern to Zug.
+Line 720: Luzern to Zürich Langstrasse.
+Specific stations along these routes were chosen to represent key nodes in the network:
+
+Basel SBB, Liestal, Sissach, Gelterkinden, Olten, Zofingen, Sursee, Luzern, Rotkreuz, Zug Nord (Abzw), Baar, Thalwil, Zürich Langstrasse.
+These stations were selected based on their importance in the Swiss railway system and their connectivity to major cities.
+
+Process
+Data Source:
+
+A GeoJSON dataset (linie_mit_polygon.geojson) was used, containing railway line geometries and associated metadata such as line numbers and segment start/end points.
+Visualization:
+
+An interactive map was created using folium. The selected railway lines were color-coded for clarity:
+Line 500 in blue
+Line 660 in green
+Line 720 in orange
+Stations were marked with red icons to indicate their geographic locations. Pop-up labels provided station names for user interaction.
+Data Filtering:
+
+We filtered the railway line data by line numbers (500, 660, 720) and specific start-end pairs for Line 720, representing sections of the Luzern–Zürich Langstrasse route.
+This required creating a list of specific station pairs (e.g., "Thalwil Nord (Abzw)" to "Thalwil") to isolate the desired segments.
+Output:
+
+The final interactive map, saved as swiss_sample.html, enabled visualization of the selected railway lines and stations. This map served as a foundational step for further network modeling.
+Challenges and Solutions
+Data Ambiguities: Some line segments lacked clear identifiers for start and end points. To address this, custom filtering logic was implemented to match specific station pairs.
+Visualization Accuracy: Ensuring station markers aligned with the correct locations on the map required cross-referencing coordinates with real-world data.
+French Railway Network
+Selected Lines and Stations
+Three railway lines were selected from the French railway network:
+
+Line 001000: Paris L’Est to Mulhouse.
+Stations: Paris L’Est (coordinates extracted from segment geometry), Belfort, Mulhouse.
+Line 420000: Paris Montparnasse to Brest.
+Stations: Paris-Montparnasse, Rennes, Lamballe, Guingamp, Plouaret-Trégor, Morlaix, Brest.
+Line 830000: Paris Gare de Lyon to Marseille Saint-Charles.
+Stations: Paris Gare de Lyon, Avignon, Marseille Saint-Charles.
+Process
+Data Sources:
+
+Two GeoJSON datasets:
+gares.geojson: Contained station metadata, including UIC codes, names, and coordinates.
+vitesse_maximale.geojson: Provided detailed geometries for railway line segments, including LineString and MultiLineString types.
+Visualization:
+
+An interactive map was created with folium, displaying the selected railway lines with distinct styles:
+Line 001000 in blue (dashed lines)
+Line 420000 in green (dotted lines)
+Line 830000 in red (solid lines)
+Stations were marked with icons, and their names were displayed in pop-ups.
+Data Processing:
+
+Handling Geometries: Both LineString and MultiLineString geometries were supported. Scripts were enhanced to iterate through all sub-lines within MultiLineString objects.
+Station Matching:
+UIC codes were used to locate stations in gares.geojson.
+Duplicated UIC codes (e.g., for Paris-Montparnasse) were resolved using substring matching.
+Coordinate Transformation:
+WGS84 coordinates were converted to UTM to prepare the data for SUMO.
+Output:
+
+The interactive map, saved as selected_french_lines.html, visualized the railway network and stations. This map serves as a baseline for SUMO simulation.
+Challenges and Solutions
+Invalid Geometries: Some segments had null or unsupported geometries. These were identified and excluded, with warnings logged for debugging.
+Complex Geometries: The presence of MultiLineString geometries required additional processing to ensure all sub-lines were included.
+Missing Data: For stations like Paris L’Est, coordinates were extracted from the vitesse_maximale.geojson dataset by filtering for the smallest pkd value.
+Lessons Learned
+The Swiss and French datasets offered complementary challenges:
+
+Swiss Network: Focused on refining filtering logic for specific station pairs and enhancing visualization clarity.
+French Network: Introduced more complex geometries and data inconsistencies, requiring robust error handling and advanced processing techniques.
+Key takeaways include:
+
+Flexibility in Data Handling: Scripts were made adaptable to handle different data structures and geometric complexities.
+Automation of Processing: Automated coordinate transformations and filtering improved efficiency.
+Scalability: The methodologies developed can be applied to other networks for future expansions.
+Conclusion
+The visualization and preparation of Swiss and French railway networks have provided a strong foundation for further research on virtual coupling. The outputs—interactive maps and SUMO-ready datasets—enable realistic simulations to study the impact of coupling strategies on railway efficiency and capacity.
+
+Future work will build on these achievements by:
+
+Simulating dynamic scenarios in SUMO, including train coupling and decoupling.
+Integrating machine learning models for optimized train control.
+Expanding the analysis to include additional railway networks and operational data.

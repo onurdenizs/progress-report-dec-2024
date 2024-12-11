@@ -35,3 +35,8 @@ dependencies:
       - tomli==2.2.1
       - plotly
       - kaleido
+      - folium
+      - selenium
+      - pyppeteer
+      - pillow
+      - lxml

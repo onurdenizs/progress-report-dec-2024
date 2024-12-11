@@ -1,0 +1,525 @@
+CODE_LIGNE,LIB_LIGNE,origin,destination
+001306,Raccordement de l'Évangile,,
+001379,Raccordement de la ligne EOLE à la ligne Paris-Mulhouse,,
+002000,Ligne de Gretz-Armainvilliers à Sézanne,Gretz-Armainvilliers,Sézanne
+004000,Ligne de Mézy à Romilly-sur-Seine,Mézy,Romilly-sur-Seine
+005000,Ligne de Paris à Strasbourg (LGV),Paris,Strasbourg (LGV)
+005315,Raccordement des Trois Puits,,
+005317,Voie navette,,
+005329,Raccordement de Châlons Nord,,
+005330,Raccordement de Châlons Sud,,
+005340,Raccordement de Vandières,,
+005341,Raccordement de Pagny,,
+005343,Raccordement de Baudrecourt,,
+005345,Raccordement de Herny,,
+006000,Ligne de Coolus à Sens,Coolus,Sens
+010000,Ligne de Oiry-Mareuil à Romilly-sur-Seine,Oiry-Mareuil,Romilly-sur-Seine
+012000,Ligne de Troyes à Brienne-le-Château,Troyes,Brienne-le-Château
+013000,Ligne de Vallentigny à Vitry-le-François,Vallentigny,Vitry-le-François
+014000,Ligne Rhin-Rhône (LGV),,
+014300,RaccordementOuest Besançon TGV,,
+014330,Raccordement de PETIT - CROIX,,
+015000,Ligne de Jessains à Sorcy,Jessains,Sorcy
+020000,Ligne de Blesme-Haussignémont à Chaumont,Blesme-Haussignémont,Chaumont
+026000,Ligne de Bologne à Pagny-sur-Meuse,Bologne,Pagny-sur-Meuse
+027000,Ligne de Nançois-Tronville à Neufchâteau,Nançois-Tronville,Neufchâteau
+030000,Ligne de Neufchâteau à Épinal,Neufchâteau,Épinal
+031950,Saut-de-mouton de Chaudenay,,
+032000,Ligne de Culmont-Chalindrey à Toul,Culmont-Chalindrey,Toul
+033000,Ligne de Langres à Andilly-en-Bassigny,Langres,Andilly-en-Bassigny
+035000,Ligne de Merrey à Hymont-Mattaincourt,Merrey,Hymont-Mattaincourt
+039000,Ligne de Toul à Rosières-aux-Salines,Toul,Rosières-aux-Salines
+039306,Raccordement de Neuves-Maisons n° 1,,
+040000,Ligne de Jarville-la-Malgrange à Mirecourt,Jarville-la-Malgrange,Mirecourt
+040306,Raccordement de Neuves-Maisons n° 2,,
+041000,Ligne de Barisey-la-Côte à Frenelle-la-Grande-Puzieux,Barisey-la-Côte,Frenelle-la-Grande-Puzieux
+042000,Ligne de Blainville-Damelevières à Lure,Blainville-Damelevières,Lure
+054000,Ligne de Corbenay à Faymont,Corbenay,Faymont
+055000,Ligne de Bas-Évette à Giromagny,Bas-Évette,Giromagny
+060000,Ligne d'Épinal à Bussang,,
+062000,Ligne d'Arches à St-Dié,,
+063000,Ligne de Laveline-devant-Bruyères à Gérardmer,Laveline-devant-Bruyères,Gérardmer
+067000,Ligne de Lunéville à St-Dié,Lunéville,St-Dié
+070000,Ligne de Noisy-le-Sec à Strasbourg-Ville,Noisy-le-Sec,Strasbourg-Ville
+070331,Raccordement de Toul n° 1,,
+070336,Raccordement direct de Frouard,,
+070346,Raccordement de Strasbourg-Cronenbourg à Strasbourg-Ville,,
+070953,Saut-de-mouton de Toul,,
+071000,Ligne d'Esbly à Crécy-la-Chapelle,,
+072000,Ligne du Trilport à Bazoches,,
+072311,Raccordement d'Ocquerre,,
+074000,Ligne d'Épernay à Reims,,
+074306,Raccordement d'Épernay,,
+076000,Ligne d'Aulnay-sous-Bois à Roissy 2-RER,,
+081000,Ligne de Châlons-en-Champagne à Reims-Cérès,Châlons-en-Champagne,Reims-Cérès
+082000,Ligne de Reims à Laon,Reims,Laon
+085000,Ligne de St-Hilaire-au-Temple à Hagondange,St-Hilaire-au-Temple,Hagondange
+088000,Ligne de Lérouville à Pont-Maugis,Lérouville,Pont-Maugis
+089000,Ligne de Lérouville à Metz-Ville,Lérouville,Metz-Ville
+089306,Raccordement de Lérouville n° 2,,
+090000,Ligne de Frouard à Novéant,Frouard,Novéant
+095000,Ligne de Longuyon à Onville et Pagny-sur-Moselle,Longuyon,Onville et Pagny-sur-Moselle
+097000,Ligne de Champigneulles à Sarralbe,Champigneulles,Sarralbe
+099000,Ligne de Metz-Ville à Château-Salins,Metz-Ville,Château-Salins
+110000,Ligne de Strasbourg-Ville à St-Dié,Strasbourg-Ville,St-Dié
+110306,Raccordement de Strasbourg à Koenigshoffen-Nord,,
+110311,Raccordement de Strasbourg à Koenigshoffen-Sud,,
+111000,Ligne de Sélestat à Saverne,Sélestat,Saverne
+114300,Raccordement de Sarrebourg à Sarraltroff,,
+115000,Ligne de Strasbourg-Ville à St-Louis,Strasbourg-Ville,St-Louis
+115306,Raccordement de Mulhouse-Dornach à Mulhouse-Nord,,
+116000,Ligne de Sélestat à Lesseux-Frapelle,Sélestat,Lesseux-Frapelle
+119000,Ligne de Colmar-Central à Metzeral,Colmar-Central,Metzeral
+120000,Ligne de Colmar-Central à Neuf-Brisach,Colmar-Central,Neuf-Brisach
+121000,Ligne de Colmar-Sud à Bollwiller,Colmar-Sud,Bollwiller
+123000,Ligne de Neuf-Brisach à Bantzenheim,Neuf-Brisach,Bantzenheim
+124000,Ligne de Mulhouse-Ville à Chalampé,Mulhouse-Ville,Chalampé
+125000,Ligne de Lutterbach à Rixheim,Lutterbach,Rixheim
+125306,Raccordement de la bifurcation de Wanne à Mulhouse-Ville,,
+130000,Ligne de Lutterbach à Kruth,Lutterbach,Kruth
+132000,Ligne de Lutterbach à Rond point Stricker,Lutterbach,Rond point Stricker
+136000,Ligne de St-Louis à Huningue,St-Louis,Huningue
+138000,Ligne de Graffenstaden à Hausbergen,Graffenstaden,Hausbergen
+139301,Raccordement de Hausbergen à Strasbourg-Cronenbourg Voie H,,
+139302,Raccordement de Strasbourg-Cronenbourg à Strasbourg-Koenigshoffen VK,,
+140000,Ligne de Réding à Metz-Ville,Réding,Metz-Ville
+141000,Ligne de Graffenstaden à Strasbourg-Neudorf,Graffenstaden,Strasbourg-Neudorf
+141306,Raccordement de Strasbourg-Neudorf à Strasbourg-Koenigshoffen,,
+142000,Ligne de Strasbourg-Ville à Strasbourg-Port-du-Rhin,Strasbourg-Ville,Strasbourg-Port-du-Rhin
+145000,Ligne de Strasbourg à Lauterbourg,Strasbourg,Lauterbourg
+145306,Raccordement de Bischheim,,
+146000,Ligne de Vendenheim à Wissembourg,Vendenheim,Wissembourg
+150000,Ligne de Haguenau à Roeschwoog et frontière,Haguenau,Roeschwoog et frontière
+159000,Ligne de Haguenau à Hargarten-Falck,Haguenau,Hargarten-Falck
+160000,Ligne de Steinbourg à Schweighouse-sur-Moder,Steinbourg,Schweighouse-sur-Moder
+161000,Ligne de Mommenheim à Sarreguemines,Mommenheim,Sarreguemines
+163000,Ligne de Sarreguemines vers Sarrebruck,,
+167000,Ligne de Réding à Diemeringen,Réding,Diemeringen
+168000,Ligne de Berthelming à Sarreguemines,Berthelming,Sarreguemines
+169000,Ligne de Kalhausen à Sarralbe,Kalhausen,Sarralbe
+172000,Ligne de Rémilly à Stiring-Wendel,Rémilly,Stiring-Wendel
+174000,Ligne de Metz-Ville à la frontière allemande vers Ueberherrn,Metz-Ville,la frontière allemande vers Ueberherrn
+176000,Ligne de Bouzonville à Guerstling,Bouzonville,Guerstling
+177000,Ligne de Thionville à Anzeling,Thionville,Anzeling
+178000,Ligne de Thionville à Apach,Thionville,Apach
+180000,Ligne de Metz-Ville à Zoufftgen,Metz-Ville,Zoufftgen
+180611,Voie-mère de Woippy n° 2,,
+186000,Ligne de Bettembourg à Audun-le-Tiche,Bettembourg,Audun-le-Tiche
+192000,Ceinture de Metz,,
+202000,Ligne de Longuyon à Mont-St-Martin (vers Athus),Longuyon,Mont-St-Martin (vers Athus)
+202100,Ligne de Longuyon à Mont-St-Martin (vers Luxembourg),Longuyon,Mont-St-Martin (vers Luxembourg)
+204000,Ligne de Mohon à Thionville,Mohon,Thionville
+205000,Ligne de Soissons à Givet,Soissons,Givet
+207000,Ligne de Bazancourt à Challerange,Bazancourt,Challerange
+210000,Ligne d'Amagne-Lucquy à Revigny,,
+212000,Ligne d'Hirson à Amagne-Lucquy,,
+218000,Ligne de Baroncourt à Audun-le-Roman,Baroncourt,Audun-le-Roman
+220000,Ligne de Valleroy-Moineville à Villerupt-Micheville,Valleroy-Moineville,Villerupt-Micheville
+222000,Ligne de Liart à Tournes,Liart,Tournes
+223000,Ligne de Charleville-Mézières à Hirson,Charleville-Mézières,Hirson
+226000,Ligne de Gonesse à Lille-Frontière (LGV),Gonesse,Lille-Frontière (LGV)
+226301,Raccordement de Vémars,,
+226310,Raccordement d'interconnexion nord-sud (LGV),,
+226320,Raccordement d'Annet,,
+226321,Raccordement de Messy,,
+228000,Ligne de Laon à Liart,Laon,Liart
+229000,Ligne de La Plaine à Hirson et Anor (frontière),La Plaine,Hirson et Anor (frontière)
+232000,Ligne d'Ormoy-Villers à Boves,,
+236000,Ligne de Laon au Cateau,,
+238000,Ligne de Busigny à Hirson,Busigny,Hirson
+240000,Ligne de Maubeuge à Fourmies,Maubeuge,Fourmies
+242000,Ligne de Creil à Jeumont,Creil,Jeumont
+242610,Voie-mère de Chauny-St-Gobain,,
+242626,Voie-mère de St-Quentin (Origny-Ste-Benoite),,
+243300,Raccordement de Rivecourt-Sud,,
+243301,Raccordement des Ageux,,
+245300,Raccordement de Rivecourt-Nord,,
+247000,Ligne d'Hautmont à Feignies (frontière),,
+247306,Raccordement de Sous-le-Bois,,
+248000,Ligne de Compiègne à Roye-Faubourg-St-Gilles,Compiègne,Roye-Faubourg-St-Gilles
+250000,Ligne de Busigny à Somain,Busigny,Somain
+259000,Ligne de St-Just-en-Chaussée à Douai,St-Just-en-Chaussée,Douai
+261000,Ligne d'Amiens à Laon,,
+261306,Raccordement de Lamotte-Brebière,,
+272000,Ligne de Paris-Nord à Lille,Paris-Nord,Lille
+294000,Ligne d'Armentières à Arques,,
+305000,Ligne de St-Roch à Frévent,St-Roch,Frévent
+311000,Ligne de Longueau à Boulogne-Ville,Longueau,Boulogne-Ville
+315000,Ligne de Montsoult-Maffliers à Luzarches,Montsoult-Maffliers,Luzarches
+316000,Ligne de Creil à Beauvais,Creil,Beauvais
+317000,Ligne de Rochy-Condé à Soissons,Rochy-Condé,Soissons
+319000,Ligne de Breteuil-Embranchement à Breteuil-Ville,Breteuil-Embranchement,Breteuil-Ville
+321000,Ligne de St-Roch à Darnétal-Bifurcation,St-Roch,Darnétal-Bifurcation
+323000,Ligne d'Abbeville à Eu,,
+325000,Ligne d'Épinay-Villetaneuse au Tréport-Mers,,
+326000,Ligne de la bifurcation de Neuville à Cergy-Préfecture,la bifurcation de Neuville,Cergy-Préfecture
+328000,Ligne d'Ermont-Eaubonne à Valmondois,,
+329000,Ligne de Pierrelaye à Creil,Pierrelaye,Creil
+330000,Ligne de St-Denis à Dieppe,St-Denis,Dieppe
+334000,Ligne de Paris-St-Lazare à Mantes-Station par Conflans-Ste-Honorine,Paris-St-Lazare,Mantes-Station par Conflans-Ste-Honorine
+334900,Ligne de Paris-St-Lazare à Ermont-Eaubonne,Paris-St-Lazare,Ermont-Eaubonne
+336000,Ligne de Conflans-Ste-Honorine à Éragny-Neuville,Conflans-Ste-Honorine,Éragny-Neuville
+338000,Ligne d'Achères à Pontoise,,
+340000,Ligne de Paris-St-Lazare au Havre,,
+340311,Raccordement de Rouen-Martainville,,
+342000,Ligne de Gisors-Embranchement à Pont-de-l'Arche,Gisors-Embranchement,Pont-de-l'Arche
+350000,Ligne de Malaunay-Le Houlme à Dieppe,Malaunay-Le Houlme,Dieppe
+354000,Ligne de Montérolier-Buchy à Motteville,Montérolier-Buchy,Motteville
+362000,Ligne de Bréauté-Beuzeville à Gravenchon-Port-Jérôme,Bréauté-Beuzeville,Gravenchon-Port-Jérôme
+365000,Ligne de Rouen-Gauche à Petit-Couronne (voies des quais),Rouen-Gauche,Petit-Couronne (voies des quais)
+366000,Ligne de Mantes-la-Jolie à Cherbourg,Mantes-la-Jolie,Cherbourg
+372000,Ligne de Serquigny à Oissel,Serquigny,Oissel
+374300,Raccordement de Serquigny,,
+375000,Ligne d'Évreux-Embranchement à Quetteville,,
+379000,Ligne de Mézidon à Trouville-Deauville,Mézidon,Trouville-Deauville
+390000,Ligne de Lisieux à Trouville-Deauville,Lisieux,Trouville-Deauville
+395000,Ligne de St-Cyr à Surdon,St-Cyr,Surdon
+396000,Ligne de Plaisir-Grignon à Épône-Mézières,Plaisir-Grignon,Épône-Mézières
+397000,Ligne de Dreux à St-Aubin-du-Vieil-Évreux,Dreux,St-Aubin-du-Vieil-Évreux
+405000,Ligne d'Argentan à Granville,,
+409000,Ligne de Chartres à Dreux,Chartres,Dreux
+415000,Ligne de Lison à Lamballe,Lison,Lamballe
+420000,Ligne de Paris-Montparnasse à Brest,Paris-Montparnasse,Brest
+421300,Raccordement du Rody au port de Brest,,
+422000,Ligne de La Loupe à Prey,La Loupe,Prey
+428000,Ligne de Sillé-le-Guillaume à La Hutte-Coulombiers,Sillé-le-Guillaume,La Hutte-Coulombiers
+429000,Ligne de Courtalain à Connerré (LGV),Courtalain,Connerré (LGV)
+429310,Raccordement de Connerré-Sud,,
+430000,Ligne du Mans à Mézidon,,
+431000,Ligne de Paris-Montparnasse à Monts (LGV),Paris-Montparnasse,Monts (LGV)
+431300,Raccordement de Massy (LGV),,
+431315,Raccordement de St-Pierre-des-Corps (LGV),,
+439000,Ligne de Vitré à Pontorson,Vitré,Pontorson
+441000,Ligne de Rennes à St-Malo-St-Servan,Rennes,St-Malo-St-Servan
+445000,Ligne de St-Brieuc au Légué,,
+446000,Ligne de Plouaret à Lannion,Plouaret,Lannion
+447000,Ligne de Morlaix à Roscoff,Morlaix,Roscoff
+450000,Ligne du Mans à Angers-Maître-École,,
+460000,Ligne de Sablé à Montoir-de-Bretagne,Sablé,Montoir-de-Bretagne
+466000,Ligne de Châteaubriant à Rennes,Châteaubriant,Rennes
+468000,Ligne de Rennes à Redon,Rennes,Redon
+468306,Raccordement de Redon,,
+470000,Ligne de Savenay à Landerneau,Savenay,Landerneau
+472000,Ligne de Ploërmel à La Brohinière,Ploërmel,La Brohinière
+473000,Ligne d'Auray à Quiberon,,
+474000,Ligne d'Auray à Pontivy,,
+475000,Ligne de St-Brieuc à Pontivy,St-Brieuc,Pontivy
+476000,Ligne de Rosporden à Concarneau,Rosporden,Concarneau
+477000,Ligne de Quimper à Pont-l'Abbé,Quimper,Pont-l'Abbé
+485000,Ligne de Guingamp à Carhaix,Guingamp,Carhaix
+486000,Ligne de Guingamp à Paimpol,Guingamp,Paimpol
+499500,Voie du port de Lorient,,
+500000,Ligne de Chartres à Bordeaux-St-Jean,Chartres,Bordeaux-St-Jean
+508000,Ligne d'Aubigné-Racan à Sablé,,
+510000,Ligne de La Flèche à Vivy,La Flèche,Vivy
+515000,Ligne de Tours à St-Nazaire,Tours,St-Nazaire
+516000,Ligne de St-Nazaire au Croisic,,
+519000,Ligne de Nantes-Orléans à Châteaubriant,Nantes-Orléans,Châteaubriant
+523000,Ligne de La Possonnière à Niort,La Possonnière,Niort
+525000,Ligne des Sables-d'Olonne à Tours,,
+527000,Ligne de Clisson à Cholet,Clisson,Cholet
+530000,Ligne de Nantes-Orléans à Saintes,Nantes-Orléans,Saintes
+534000,Ligne de Nantes-État à La Roche-sur-Yon par Ste-Pazanne,Nantes-État,La Roche-sur-Yon par Ste-Pazanne
+534311,Raccordement de Commequiers,,
+535000,Ligne de Commequiers à St-Gilles-Croix-de-Vie,Commequiers,St-Gilles-Croix-de-Vie
+536000,Ligne de Ste-Pazanne à Pornic,Ste-Pazanne,Pornic
+538000,Ligne de St-Benoît à La Rochelle-Ville,St-Benoît,La Rochelle-Ville
+547000,Ligne de St-Mariens-St-Yzan à Blaye,St-Mariens-St-Yzan,Blaye
+550000,Ligne de Brétigny à La Membrolle-sur-Choisille,Brétigny,La Membrolle-sur-Choisille
+553000,Ligne d'Ouest-Ceinture à Chartres,,
+555000,Ligne de Beaulieu-le-Coudray à Auneau-Embranchement,Beaulieu-le-Coudray,Auneau-Embranchement
+556000,Ligne de Chartres à Orléans,Chartres,Orléans
+557000,Ligne de Voves à Toury,Voves,Toury
+558000,Ligne de Courtalain-St-Pellerin à Patay,Courtalain-St-Pellerin,Patay
+559000,Ligne de Pont-de-Braye à Blois,Pont-de-Braye,Blois
+561000,Ligne de Tours au Mans,,
+562300,Raccordement de St-Pierre-des-Corps vers Nantes,,
+563300,Raccordement de St-Pierre-des-Corps à Tours,,
+564300,Raccordement de Tours à Monts (bifurcation de Bordeaux),,
+569000,Ligne des Aubrais-Orléans à Orléans,,
+569300,Raccordement d'Orléans vers Tours,,
+569301,Raccordement d'Orléans vers Vierzon,,
+570000,Ligne de Paris-Austerlitz à Bordeaux-St-Jean,Paris-Austerlitz,Bordeaux-St-Jean
+580000,Ligne de Châteauneuf-sur-Charente à St-Mariens-St-Yzan,Châteauneuf-sur-Charente,St-Mariens-St-Yzan
+590000,Ligne des Aubrais-Orléans à Montauban-Ville-Bourbon,,
+593000,Ligne de Vierzon à St-Pierre-des-Corps,Vierzon,St-Pierre-des-Corps
+594000,Ligne de Joué-lès-Tours à Châteauroux,Joué-lès-Tours,Châteauroux
+598000,Ligne de Port-de-Piles à Argenton-sur-Creuse,Port-de-Piles,Argenton-sur-Creuse
+600000,Ligne de Salbris au Blanc,,
+601000,Ligne de St-Benoît au Blanc,,
+604000,Ligne de Mignaloux-Nouaillé à Bersac,Mignaloux-Nouaillé,Bersac
+606000,Ligne du Dorat à Limoges-Bénédictins,,
+610000,Ligne de Limoges-Bénédictins à Angoulême,Limoges-Bénédictins,Angoulême
+611000,Ligne de Limoges-Bénédictins à Périgueux,Limoges-Bénédictins,Périgueux
+613000,Ligne de Nexon à Brive-la-Gaillarde,Nexon,Brive-la-Gaillarde
+621000,Ligne de Coutras à Tulle,Coutras,Tulle
+628000,Ligne de Siorac-en-Périgord à Cazoulès,Siorac-en-Périgord,Cazoulès
+629000,Ligne de Libourne au Buisson,,
+631000,Ligne de Niversac à Agen,Niversac,Agen
+640000,Ligne de Bordeaux-St-Jean à Sète-Ville,Bordeaux-St-Jean,Sète-Ville
+640100,Ligne de Colombiers à Cazouls-lès-Béziers,Colombiers,Cazouls-lès-Béziers
+643000,Ligne de Port-Ste-Marie à Riscle,Port-Ste-Marie,Riscle
+647000,Ligne de Bon-Encontre à Vic-en-Bigorre,Bon-Encontre,Vic-en-Bigorre
+648000,Ligne de St-Agne à Auch,St-Agne,Auch
+649000,Ligne de Castelsarrasin à Beaumont-de-Lomagne,Castelsarrasin,Beaumont-de-Lomagne
+650000,Ligne de Toulouse à Bayonne,Toulouse,Bayonne
+652000,Ligne de Morcenx à Bagnères-de-Bigorre,Morcenx,Bagnères-de-Bigorre
+655000,Ligne de Bordeaux-St-Jean à Irun,Bordeaux-St-Jean,Irun
+666000,Ligne de Lourdes à Pierrefitte-Nestalas,Lourdes,Pierrefitte-Nestalas
+667000,Ligne de Lannemezan à Arreau-Cadéac,Lannemezan,Arreau-Cadéac
+668000,Ligne de Montréjeau-Gourdan-Polignan à Luchon,Montréjeau-Gourdan-Polignan,Luchon
+669000,Ligne de Villefranche-Vernet-les-Bains à Latour-de-Carol,Villefranche-Vernet-les-Bains,Latour-de-Carol
+670000,Ligne de Boussens à St-Girons,Boussens,St-Girons
+672000,Ligne de Portet-St-Simon à Puigcerda (frontière),Portet-St-Simon,Puigcerda (frontière)
+676000,Ligne de Carcassonne à Rivesaltes,Carcassonne,Rivesaltes
+677000,Ligne de Narbonne à Port-Bou (frontière),Narbonne,Port-Bou (frontière)
+677306,Raccordement de Narbonne-Triangle,,
+678300,Raccordement de Port-Vendres-Ville à Port-Vendres-Quais,,
+679000,Ligne de Perpignan à Villefranche-Vernet-les-Bains,Perpignan,Villefranche-Vernet-les-Bains
+679305,Raccordement TGV du SOLER,,
+680000,Ligne d'Elne à Arles-sur-Tech,,
+681000,Ligne de La Guerche-sur-l'Aubois à Marseille-lès-Aubigny,La Guerche-sur-l'Aubois,Marseille-lès-Aubigny
+684000,Ligne d'Étampes à Beaune-la-Rolande,,
+689000,Ligne de St-Germain-du-Puy à Cosne-Cours-sur-Loire,St-Germain-du-Puy,Cosne-Cours-sur-Loire
+690000,Ligne de Vierzon à Saincaize,Vierzon,Saincaize
+692100,Ligne de St-Satur à St-Satur-Gare-d'Eau,St-Satur,St-Satur-Gare-d'Eau
+694000,Ligne de Paulhan à Montpellier,Paulhan,Montpellier
+695000,Ligne de Bourges à Miécaze,Bourges,Miécaze
+696000,Ligne de Châteauroux à La Ville-Gozet,Châteauroux,La Ville-Gozet
+699000,Ligne de Champillet-Urciers à Lavaufranche,Champillet-Urciers,Lavaufranche
+701000,Ligne de Capdenac à Rodez,Capdenac,Rodez
+702000,Ligne de Montluçon à St-Sulpice-Laurière,Montluçon,St-Sulpice-Laurière
+703000,Ligne de Vieilleville à Bourganeuf,Vieilleville,Bourganeuf
+705000,Ligne de Montluçon à Moulins,Montluçon,Moulins
+707000,Ligne de Commentry à Gannat,Commentry,Gannat
+709000,Ligne de Lapeyrouse à Volvic,Lapeyrouse,Volvic
+710000,Ligne de Laqueuille au Mont-Dore,,
+711000,Ligne d'Eygurande-Merlines à Clermont-Ferrand,,
+712000,Ligne de Busseau-sur-Creuse à Ussel,Busseau-sur-Creuse,Ussel
+713000,Ligne du Palais à Eygurande-Merlines,,
+716000,Ligne de Tulle à Meymac,Tulle,Meymac
+718000,Ligne de Brive-la-Gaillarde à Toulouse-Matabiau via Capdenac,Brive-la-Gaillarde,Toulouse-Matabiau via Capdenac
+719000,Ligne de Souillac à Viescamp-sous-Jallès,Souillac,Viescamp-sous-Jallès
+720000,Ligne de Figeac à Arvant,Figeac,Arvant
+721000,Ligne de Bort-les-Orgues à Neussargues,Bort-les-Orgues,Neussargues
+722000,Ligne de Béziers à Neussargues,Béziers,Neussargues
+723000,Ligne du Monastier à La Bastide-St-Laurent-les-Bains,,
+724000,Ligne de Cahors à Capdenac,Cahors,Capdenac
+725000,Ligne de Sévérac-le-Château à Rodez,Sévérac-le-Château,Rodez
+731000,Ligne de Sète-Ville à Montbazin-Gigean,Sète-Ville,Montbazin-Gigean
+732000,Ligne de Vias à Lodève,Vias,Lodève
+734000,Ligne de Narbonne à Bize,Narbonne,Bize
+736000,Ligne de Castelnaudary à Rodez,Castelnaudary,Rodez
+737000,Ligne de Castres à Bédarieux,Castres,Bédarieux
+738000,Ligne de Montauban-Ville-Bourbon à La Crémade,Montauban-Ville-Bourbon,La Crémade
+739000,Ligne de Lexos à Montauban-Ville-Bourbon,Lexos,Montauban-Ville-Bourbon
+741000,Ligne de Tessonnières à Albi,Tessonnières,Albi
+742000,Ligne d'Albi à St-Juéry,,
+745000,Ligne de Villeneuve-St-Georges à Montargis,Villeneuve-St-Georges,Montargis
+746000,Ligne de Corbeil-Essonnes à Montereau,Corbeil-Essonnes,Montereau
+747000,Ligne de Bourron-Marlotte-Grez à Malesherbes,Bourron-Marlotte-Grez,Malesherbes
+748000,Ligne de Montargis à Sens,Montargis,Sens
+749000,Ligne de Triguères à Surgy,Triguères,Surgy
+750000,Ligne de Moret-Veneux-les-Sablons à Lyon-Perrache,Moret-Veneux-les-Sablons,Lyon-Perrache
+750316,Raccordement de Badan (poste 1) à Chasse-sur-Rhône (poste 3),,
+752000,Ligne de Combs-la-Ville à St-Louis (LGV),Combs-la-Ville,St-Louis (LGV)
+752100,Ligne de Villeneuve-St-Georges à la bifurcation de Moisenay (LGV),Villeneuve-St-Georges,la bifurcation de Moisenay (LGV)
+752305,Raccordement de Valenton (LGV),,
+752308,Raccordement de Coubert (LGV),,
+752330,Raccordement de Lyon-St-Clair (LGV),,
+752340,Raccordement de Grenay (LGV),,
+752342,Raccordement de St-Marcel-lès-Valence,,
+752350,Raccordement d'Heyrieux (LGV),,
+753000,Ligne de Laroche-Migennes à Cosne,Laroche-Migennes,Cosne
+754000,Ligne de Clamecy à Nevers,Clamecy,Nevers
+755000,Ligne de Cravant-Bazarnes à Dracy-St-Loup,Cravant-Bazarnes,Dracy-St-Loup
+757000,Ligne de Maison-Dieu aux Laumes-Alésia,,
+760000,Ligne de Nevers à Chagny,Nevers,Chagny
+760306,Raccordement des lignes de Chagny à Dole et de Paris-Lyon à Marseille-St-Charles,,
+760311,Raccordement des lignes de Nevers à Chagny et de Chagny à Dole,,
+761000,Ligne d'Étang à Santenay (via Autun),,
+762000,Ligne de Clamecy à Gilly-sur-Loire,Clamecy,Gilly-sur-Loire
+764000,Ligne de St-Florentin-Vergigny à Moneteau-Gurgy,St-Florentin-Vergigny,Moneteau-Gurgy
+768300,Raccordement de Pasilly à Aisy,,
+769000,Ligne du Coteau à Montchanin,,
+770000,Ligne de Moulins à Mâcon,Moulins,Mâcon
+772000,Ligne de Cluny à Chalon-sur-Saône,Cluny,Chalon-sur-Saône
+774000,Ligne de Pouilly-sous-Charlieu à Clermain,Pouilly-sous-Charlieu,Clermain
+775000,Ligne de Paray-le-Monial à Givors-Canal,Paray-le-Monial,Givors-Canal
+775311,Raccordement de Badan (poste 3) à Badan (poste 1),,
+776000,Ligne de Belleville à Beaujeu,Belleville,Beaujeu
+777300,Raccordement de Pont-de-Veyle,,
+778300,Raccordement de Mâcon-Sud,,
+779300,Raccordement de Mâcon-Nord,,
+780000,Ligne de St-Étienne-La Terrasse à St-Étienne-Pont-de-l'Âne,St-Étienne-La Terrasse,St-Étienne-Pont-de-l'Âne
+782000,Ligne de Lyon-St-Paul à Montbrison,Lyon-St-Paul,Montbrison
+782310,Raccordement de Tassin (SHUNT-TT),,
+783000,Ligne du Coteau à St-Germain-au-Mont-d'Or,,
+784000,Ligne de Clermont-Ferrand à St-Just-sur-Loire,Clermont-Ferrand,St-Just-sur-Loire
+785000,Ligne de St-Germain-des-Fossés à Darsac,St-Germain-des-Fossés,Darsac
+786000,Ligne de Vichy à Cusset,Vichy,Cusset
+787000,Ligne de Vichy à Riom,Vichy,Riom
+789000,Ligne de La Ferté-Hauterive à Gannat,La Ferté-Hauterive,Gannat
+790000,Ligne de St-Germain-des-Fossés à Nîmes-CRB1,St-Germain-des-Fossés,Nîmes-CRB1
+790305,Raccordement de St Germain des Fossès,,
+792000,Ligne du Puy à Langogne,,
+793606,Voie-mère de la ZI de Volvic à Riom,,
+795000,Ligne de Bonson à Sembadel,Bonson,Sembadel
+796000,Ligne de St-Just-sur-Loire à St-Just-St-Rambert,St-Just-sur-Loire,St-Just-St-Rambert
+797000,Ligne de Firminy à St-Rambert-d'Albon,Firminy,St-Rambert-d'Albon
+797306,Raccordement de St-Rambert-d'Albon (bifurcation nord),,
+797311,Raccordement sud de Peyraud,,
+798000,Ligne de St-Georges-d'Aurac à St-Étienne-Châteaucreux,St-Georges-d'Aurac,St-Étienne-Châteaucreux
+800000,Ligne de Givors-Canal à Grezan,Givors-Canal,Grezan
+800306,Raccordement de Peyraud (bifurcation nord),,
+800311,Raccordement nord de La Voulte (bifurcation nord),,
+800316,Raccordement sud de La Voulte (bifurcation sud),,
+805000,Ligne du Teil à Alès,,
+808000,Ligne de Bessèges à Robiac,Bessèges,Robiac
+810000,Ligne de Tarascon à Sète-Ville,Tarascon,Sète-Ville
+810315,Raccordement de Nimes-Alès,,
+811000,Ligne de La Peyrade-Bifurcation à Sète-Méditerranée,La Peyrade-Bifurcation,Sète-Méditerranée
+812306,Raccordement de L'Ardoise à Port-L'Ardoise,,
+813000,Ligne du Martinet à Beaucaire,,
+814000,Ligne de Mas-des-Gardies aux Mazes-le-Crès,,
+815000,Ligne de Lézan à St-Jean-du-Gard,Lézan,St-Jean-du-Gard
+817000,Ligne de Sommières à St-Césaire,Sommières,St-Césaire
+819000,Ligne de St-Césaire au Grau-du-Roi,,
+820000,Ligne d'Arles à Lunel,,
+824000,Ligne de Villeneuve-lès-Avignon à Avignon,Villeneuve-lès-Avignon,Avignon
+824301,Raccordement sud de Villeneuve-lès-Avignon,,
+824306,Raccordement de Villeneuve-lès-Avignon,,
+830000,Ligne de Paris-Lyon à Marseille-St-Charles,Paris-Lyon,Marseille-St-Charles
+830331,Raccordement de St-Fons,,
+830336,Raccordement de Chasse-sur-Rhône,,
+830341,Raccordement de Livron-Nord (bifurcation nord),,
+830346,Raccordement de Livron-Sud (bifurcation sud),,
+830351,Raccordement nord de Tarascon,,
+830356,Raccordement sud de Tarascon,,
+830361,Raccordement sud de Miramas,,
+830366,Raccordement de Lyon-Guillotière à Lyon-Part-Dieu,,
+830900,Voies de liaison de Dijon à Gevrey-Chambertin,,
+831000,Ligne de Flamboin-Gouaix à Montereau,Flamboin-Gouaix,Montereau
+832000,Ligne de St-Julien (Troyes) à St-Florentin-Vergigny,St-Julien (Troyes),St-Florentin-Vergigny
+834000,Ligne des Angles à Lattes (LGV ),,
+834100,Raccordement branche grand-sud du triangle des Angles (LGV),,
+834310,Raccordement R2N de Redessan-Manduel,,
+834311,Raccordement R1N de Redessan-Manduel,,
+838000,Ligne de St-Julien (Troyes) à Gray,St-Julien (Troyes),Gray
+839000,Ligne de Nuits-sous-Ravières à Châtillon-sur-Seine,Nuits-sous-Ravières,Châtillon-sur-Seine
+840000,Ligne de Bricon à Châtillon-sur-Seine,Bricon,Châtillon-sur-Seine
+843000,Ligne d'Is-sur-Tille à Culmont-Chalindrey,,
+847000,Ligne de Vaivre à Gray,Vaivre,Gray
+849000,Ligne de Dijon-Ville à Is-sur-Tille,Dijon-Ville,Is-sur-Tille
+850000,Ligne de Dijon-Ville à Vallorbe (frontière),Dijon-Ville,Vallorbe (frontière)
+851000,Ligne de Gray à St-Jean-de-Losne,Gray,St-Jean-de-Losne
+852000,Ligne de Dole-Ville à Belfort,Dole-Ville,Belfort
+852306,Raccordement de Belfort,,
+854000,Ligne de Belfort à Delle,Belfort,Delle
+856000,Ligne de Besançon-Viotte à Vesoul,Besançon-Viotte,Vesoul
+856350,Raccordement EST de Besançon TGV,,
+857000,Ligne de Montbozon à Lure,Montbozon,Lure
+859000,Ligne de Voujeaucourt à St-Hippolyte,Voujeaucourt,St-Hippolyte
+860000,Ligne de Dijon-Ville à St-Amour,Dijon-Ville,St-Amour
+861300,Raccordement de Lyon (Dijon-Perrigny),,
+861301,Raccordement évite-Perrigny,,
+862300,Raccordement supérieur de Longvic,,
+862301,Raccordement à niveau de Longvic,,
+862310,Raccordement TGV de Perrigny,,
+863300,Raccordement de St-Amour (à Gevrey-Chambertin),,
+865000,Ligne de Chagny à Dole-Ville,Chagny,Dole-Ville
+867000,Ligne de Seurre à Chalon-sur-Saône,Seurre,Chalon-sur-Saône
+868000,Ligne de Chaugey à Lons-le-Saunier,Chaugey,Lons-le-Saunier
+869000,Ligne de Dole-Ville à Poligny,Dole-Ville,Poligny
+871000,Ligne de Franois à Arc-et-Senans,Franois,Arc-et-Senans
+872000,Ligne de Besançon-Viotte au Locle-Col-des-Roches,,
+875000,Ligne de Frasne à Verrières-de-Joux (frontière),Frasne,Verrières-de-Joux (frontière)
+877301,Raccordement de Villers-les-Pots n° 1,,
+878000,Ligne d'Andelot-en-Montagne à La Cluse,,
+880000,Ligne de Mouchard à Bourg-en-Bresse,Mouchard,Bourg-en-Bresse
+882000,Ligne de Chalon-sur-Saône à Bourg-en-Bresse,Chalon-sur-Saône,Bourg-en-Bresse
+883000,Ligne de Mâcon à Ambérieu,Mâcon,Ambérieu
+883306,Raccordement d'Ambérieu,,
+884000,Ligne de Bourg-en-Bresse à Bellegarde,Bourg-en-Bresse,Bellegarde
+886000,Ligne de Lyon-St-Clair à Bourg-en-Bresse,Lyon-St-Clair,Bourg-en-Bresse
+887000,Ligne de Lyon-Croix-Rousse à Trévoux,Lyon-Croix-Rousse,Trévoux
+888000,Ligne de Lyon-Gorge-de-Loup à Lyon-Vaise,Lyon-Gorge-de-Loup,Lyon-Vaise
+889000,Ligne d'Ambérieu à Montalieu-Vercieu,,
+890000,Ligne de Lyon-Perrache à Genève (frontière),Lyon-Perrache,Genève (frontière)
+891000,Ligne de Collonges-Fort-l'Écluse à Divonne-les-Bains (frontière),Collonges-Fort-l'Écluse,Divonne-les-Bains (frontière)
+892000,Ligne de Longeray-Léaz au Bouveret,,
+893000,Ligne de Collonges-Fontaines à Lyon-Guillotière,Collonges-Fontaines,Lyon-Guillotière
+893306,Raccordement de Lyon-Guillotière,,
+895000,Ligne de La Roche-sur-Foron à St-Gervais-les-Bains-Le Fayet,La Roche-sur-Foron,St-Gervais-les-Bains-Le Fayet
+896000,Ligne de St-Gervais-les-Bains-Le Fayet à Vallorcine (frontière),St-Gervais-les-Bains-Le Fayet,Vallorcine (frontière)
+897000,Ligne d'Aix-les-Bains-Le Revard à Annemasse,,
+898000,Ligne d'Annecy à Albertville,,
+899000,Ligne de St-Pierre-d'Albigny à Bourg-St-Maurice,St-Pierre-d'Albigny,Bourg-St-Maurice
+900000,Ligne de Culoz à Modane (frontière),Culoz,Modane (frontière)
+900903,Évitement de Pontamafrey,,
+903000,Ligne de St-André-le-Gaz à Chambéry,St-André-le-Gaz,Chambéry
+904000,Ligne de Pressins à Virieu-le-Grand,Pressins,Virieu-le-Grand
+905000,Ligne de Lyon-Perrache P1 à Marseille-St-Charles (via Grenoble),Lyon-Perrache P1,Marseille-St-Charles (via Grenoble)
+905306,Raccordement de Pertuis,,
+906000,Ligne de Givors-Canal à Chasse-sur-Rhône,Givors-Canal,Chasse-sur-Rhône
+907000,Ligne de St-Rambert-d'Albon à Rives,St-Rambert-d'Albon,Rives
+908000,Ligne de Valence à Moirans,Valence,Moirans
+908320,Raccordement de Châteauneuf sur Isère,,
+909000,Ligne de Grenoble à Montmélian,Grenoble,Montmélian
+909306,Raccordement de Montmélian,,
+909903,Déviation de la ligne de Grenoble à Montmélian,,
+912000,Ligne de Livron à Aspres-sur-Buëch,Livron,Aspres-sur-Buëch
+913000,Ligne de Livron à La Voulte,Livron,La Voulte
+915000,Ligne de Veynes à Briançon,Veynes,Briançon
+920000,Ligne de St-Auban à Digne,St-Auban,Digne
+922000,Ligne de Cavaillon à St-Maime-Dauphin,Cavaillon,St-Maime-Dauphin
+923000,Ligne de Cheval-Blanc à Pertuis,Cheval-Blanc,Pertuis
+925000,Ligne d'Avignon à Miramas,,
+926000,Ligne d'Orange à L'Isle-Fontaine-de-Vaucluse,,
+927000,Ligne de Sorgues-Châteauneuf-du-Pape à Carpentras,Sorgues-Châteauneuf-du-Pape,Carpentras
+929300,Raccordement d'Avignon,,
+930000,Ligne de Marseille-St-Charles à Vintimille (frontière),Marseille-St-Charles,Vintimille (frontière)
+934100,Voie de desserte de Moureplane,,
+935000,Ligne de Miramas à L'Estaque,Miramas,L'Estaque
+935111,Ligne de Port-de-Bouc à Caronte-la-Gafette,Port-de-Bouc,Caronte-la-Gafette
+935306,Raccordement sud de Lavalduc,,
+935311,Raccordement sud de Fos-Graveleau,,
+935606,Voie-mère de Martigues à Lavera,,
+935901,Ligne de Lavalduc à Fos-Coussoul (dépôts pétroliers),Lavalduc,Fos-Coussoul (dépôts pétroliers)
+935902,Voie de desserte du môle minéralier de Fos,,
+935903,Voie de desserte de Port-St-Louis-du-Rhône,,
+935904,Voie de desserte de Fos-Graveleau,,
+936300,Raccordement des Chartreux,,
+937000,Ligne de Marseille-Blancarde à Marseille-Prado,Marseille-Blancarde,Marseille-Prado
+939001,L'Estaque à Marseille St-Charles,,
+939306,Raccordement de L'Estaque-Joliette à Marseille-Canet,,
+940100,Ligne de Marseille-Arenc à Marseille-Canet,Marseille-Arenc,Marseille-Canet
+942000,Ligne de La Pauline-Hyères aux Salins-d'Hyères,,
+943000,Ligne des Arcs à Draguignan,,
+944000,Ligne de Cannes-la-Bocca à Grasse,Cannes-la-Bocca,Grasse
+945000,Ligne de Nice à Breil-sur-Roya,Nice,Breil-sur-Roya
+946000,Ligne de Coni à Vintimille,Coni,Vintimille
+947000,Ligne de Carnoules à Gardanne,Carnoules,Gardanne
+948000,Ligne d'Aubagne à La Barque,,
+957000,Ligne de Bobigny à Sucy-Bonneuil,Bobigny,Sucy-Bonneuil
+958000,Ligne de Bondy à Aulnay-sous-Bois,Bondy,Aulnay-sous-Bois
+959300,Raccordement nord de Villiers-sur-Marne,,
+962000,Ligne d'Ermont-Eaubonne à Champ-de-Mars (VMI),,
+963000,Ligne de La Plaine à Ermont-Eaubonne,La Plaine,Ermont-Eaubonne
+973000,Ligne de Paris-St-Lazare à Versailles-Rive-Droite,Paris-St-Lazare,Versailles-Rive-Droite
+974000,Ligne de St-Cloud à St-Nom-la-Bretèche-Forêt-de-Marly,St-Cloud,St-Nom-la-Bretèche-Forêt-de-Marly
+975000,Ligne de Paris-St-Lazare à St-Germain-en-Laye,Paris-St-Lazare,St-Germain-en-Laye
+975900,Ligne de Nanterre-Université à Sartrouville,Nanterre-Université,Sartrouville
+977000,Ligne des Invalides à Versailles-Rive-Gauche,,
+979000,Ligne de Paris-Est à Pont-Cardinet (EOLE),Paris-Est,Pont-Cardinet (EOLE)
+981000,Ligne de Paris-Nord à Paris-Gare-de-Lyon (RER ligne D),Paris-Nord,Paris-Gare-de-Lyon (RER ligne D)
+983000,Ligne des Invalides à Quai-d'Orsay,,
+984000,Ligne de Quai-d'Orsay à Paris-Austerlitz,Quai-d'Orsay,Paris-Austerlitz
+985000,Ligne de Choisy-le-Roi à Massy-Verrières,Choisy-le-Roi,Massy-Verrières
+988000,Ligne de Grigny à Corbeil-Essonnes,Grigny,Corbeil-Essonnes
+990000,Ligne de la grande ceinture de Paris,,
+990331,Raccordement marché gare de Rungis voie MG,,
+991300,Raccordement de Gagny-Tronc-Commun,,
+991301,Raccordement de Gagny-Nord,,
+991302,Raccordement de Gagny-Sud,,
+992300,Raccordement du Bas-Martineau,,
