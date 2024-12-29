@@ -1,0 +1,10 @@
+<configuration>
+    <input>
+        <net-file value="D:\PhD\codingPractices\progress-report-dec-2024\sumo\inputs\sw_real_samp\sw_real_samp.net.xml"/>
+        <route-files value="D:\PhD\codingPractices\progress-report-dec-2024\sumo\inputs\sw_real_samp\sw_real_samp.rou.xml"/>
+    </input>
+    <time>
+        <begin value="0"/>
+        <end value="21600"/>
+    </time>
+</configuration>
