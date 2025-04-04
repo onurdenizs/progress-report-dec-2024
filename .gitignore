@@ -1,7 +1,46 @@
+# VS Code workspace settings
 .vscode/
+
+# Python cache
 __pycache__/
+*.pyc
+
+# Logs
 *.log
-outputs/
-*.xml
-data/raw/
+
+# SUMO outputs and intermediate files
+*.net.xml
+*.rou.xml
+*.sumocfg
+*.tripinfo.xml
+*.emissions.xml
+*.fcd.xml
+*.edg.xml
+*.nod.xml
+*.con.xml
+*.tll.xml
+
+# Route and config generators
+*.geojson
+*.json
+*.yaml
+
+# Output images and plots
+*.png
+*.svg
+*.jpg
+
+# HTML reports
 *.html
+
+# Project-specific folders
+data/
+outputs/
+docs/_build/
+
+# OS/system files
+.DS_Store
+Thumbs.db
+
+# LFS (if no longer used)
+.gitattributes
