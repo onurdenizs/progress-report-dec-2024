@@ -4,3 +4,4 @@ __pycache__/
 outputs/
 *.xml
 data/raw/
+*.html
