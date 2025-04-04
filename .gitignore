@@ -19,6 +19,8 @@ __pycache__/
 *.nod.xml
 *.con.xml
 *.tll.xml
+*.edge.xml
+
 
 # Route and config generators
 *.geojson
