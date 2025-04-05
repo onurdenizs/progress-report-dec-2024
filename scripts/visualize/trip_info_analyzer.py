@@ -3,7 +3,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Path to tripinfo-output file
-TRIPINFO_FILE = r"D:\PhD\codingPractices\progress-report-dec-2024\sumo\outputs\sw_real_comp\sw_comp_output_tripinfo.xml"
+TRIPINFO_FILE = "D:\\PhD\\codingPractices\\progress-report-dec-2024\\sumo\\outputs\\sw_real_comp\\sw_comp_output.tripinfo.xml"
+
 
 def parse_tripinfo(file_path):
     """

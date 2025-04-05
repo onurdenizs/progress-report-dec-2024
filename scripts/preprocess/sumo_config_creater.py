@@ -8,11 +8,13 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(
 logger = logging.getLogger()
 
 # File paths
-ROUTE_FILE = r"D:\PhD\codingPractices\progress-report-dec-2024\sumo\inputs\sw_real_comp\sw_real_samp.rou.xml"
-CONFIG_FILE = r"D:\PhD\codingPractices\progress-report-dec-2024\sumo\inputs\sw_real_comp\sw_real_samp.sumocfg"
+ROUTE_FILE = r"D:\PhD\codingPractices\progress-report-dec-2024\sumo\inputs\sw_real_comp\sw_real_comp.rou.xml"
+CONFIG_FILE = r"D:\PhD\codingPractices\progress-report-dec-2024\sumo\inputs\sw_real_comp\sw_real_comp.sumocfg"
+NETWORK_FILE = r"D:\PhD\codingPractices\progress-report-dec-2024\sumo\inputs\sw_real_comp\sw_real_comp.net.xml"
+
 OUTPUT_DIR = r"D:\PhD\codingPractices\progress-report-dec-2024\sumo\outputs\sw_real_comp"
 OUTPUT_PREFIX = "sw_comp_output"
-NETWORK_FILE = r"D:\PhD\codingPractices\progress-report-dec-2024\sumo\inputs\sw_real_comp\sw_real_samp.net.xml"
+
 
 # Default simulation settings
 EXTRA_SIMULATION_TIME = 3600  # Seconds to add after the last vehicle departs

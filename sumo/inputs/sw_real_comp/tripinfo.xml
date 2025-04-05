@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-04-05 13:00:28 by Eclipse SUMO sumo Version 1.20.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="sw_real_comp.net.xml"/>
+        <route-files value="sw_real_comp.rou.xml"/>
+    </input>
+
+    <output>
+        <tripinfo-output value="tripinfo.xml"/>
+    </output>
+
+    <time>
+        <end value="10000"/>
+    </time>
+
+</configuration>
+-->
+
+<tripinfos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/tripinfo_file.xsd">
+    <tripinfo id="train_500_1" depart="217.00" departLane="edge_BSO_BSNO_0" departPos="50.10" departSpeed="0.00" departDelay="0.00" arrival="3126.00" arrivalLane="edge_LZEF_LZ_0" arrivalPos="595.98" arrivalSpeed="57.92" duration="2909.00" routeLength="94325.27" waitingTime="0.00" waitingCount="0" stopTime="741.00" timeLoss="809.15" rerouteNo="0" devices="tripinfo_train_500_1" vType="trainType_1" speedFactor="1.00" vaporized=""/>
+    <tripinfo id="train_500_2" depart="605.00" departLane="edge_BSO_BSNO_0" departPos="50.10" departSpeed="0.00" departDelay="0.00" arrival="3225.00" arrivalLane="edge_LZEF_LZ_0" arrivalPos="595.98" arrivalSpeed="68.44" duration="2620.00" routeLength="94325.27" waitingTime="0.00" waitingCount="0" stopTime="708.00" timeLoss="552.97" rerouteNo="0" devices="tripinfo_train_500_2" vType="trainType_2" speedFactor="1.00" vaporized=""/>
+    <tripinfo id="train_500_3" depart="900.00" departLane="edge_BSO_BSNO_0" departPos="50.10" departSpeed="0.00" departDelay="0.00" arrival="3333.00" arrivalLane="edge_LZEF_LZ_0" arrivalPos="595.98" arrivalSpeed="69.44" duration="2433.00" routeLength="94325.27" waitingTime="130.00" waitingCount="2" stopTime="530.00" timeLoss="544.10" rerouteNo="0" devices="tripinfo_train_500_3" vType="trainType_3" speedFactor="1.00" vaporized=""/>
+    <tripinfo id="train_500_4" depart="986.00" departLane="edge_BSO_BSNO_0" departPos="50.10" departSpeed="0.00" departDelay="0.00" arrival="3722.00" arrivalLane="edge_LZEF_LZ_0" arrivalPos="595.98" arrivalSpeed="69.44" duration="2736.00" routeLength="94325.27" waitingTime="0.00" waitingCount="0" stopTime="611.00" timeLoss="766.37" rerouteNo="0" devices="tripinfo_train_500_4" vType="trainType_4" speedFactor="1.00" vaporized=""/>
+</tripinfos>

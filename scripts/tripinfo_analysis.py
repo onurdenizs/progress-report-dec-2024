@@ -2,7 +2,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Read the tripinfo.xml
-tripinfo_df = pd.read_xml("D:/PhD/codingPractices/progress-report-dec-2024/outputs/sumo/tripinfo.xml")
+tripinfo_df = pd.read_xml("sumo/outputs/sw_real_comp/sw_comp_output_tripinfo.xml")
+
 
 # Basic Metrics
 tripinfo_df["average_speed"] = tripinfo_df["routeLength"] / tripinfo_df["duration"]

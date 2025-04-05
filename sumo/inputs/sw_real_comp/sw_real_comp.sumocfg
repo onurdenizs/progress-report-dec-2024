@@ -4,13 +4,14 @@
     <net-file value="D:\PhD\codingPractices\progress-report-dec-2024\sumo\inputs\sw_real_comp\sw_real_comp.net.xml"/>
     <route-files value="D:\PhD\codingPractices\progress-report-dec-2024\sumo\inputs\sw_real_comp\sw_real_comp.rou.xml"/>
   </input>
-  <output>
-    <fcd-output value="D:\PhD\codingPractices\progress-report-dec-2024\sumo\outputs\sw_real_comp\sw_comp_output_fcd.xml"/>
-    <tripinfo-output value="D:\PhD\codingPractices\progress-report-dec-2024\sumo\outputs\sw_real_comp\sw_comp_output_tripinfo.xml"/>
-    <emission-output value="D:\PhD\codingPractices\progress-report-dec-2024\sumo\outputs\sw_real_comp\sw_comp_output_emissions.xml"/>
-  </output>
   <time>
     <begin value="0"/>
-    <end value="3600"/>
+    <end value="4586"/>
   </time>
+  <output>
+    <tripinfo-output value="D:\PhD\codingPractices\progress-report-dec-2024\sumo\outputs\sw_real_comp\sw_comp_output.tripinfo.xml"/>
+    <emission-output value="D:\PhD\codingPractices\progress-report-dec-2024\sumo\outputs\sw_real_comp\sw_comp_output.emissions.xml"/>
+    <fcd-output value="D:\PhD\codingPractices\progress-report-dec-2024\sumo\outputs\sw_real_comp\sw_comp_output.fcd.xml"/>
+    <edgedata-output value="D:\PhD\codingPractices\progress-report-dec-2024\sumo\outputs\sw_real_comp\sw_comp_output.edg.xml"/>
+  </output>
 </configuration>

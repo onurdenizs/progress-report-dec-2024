@@ -26,10 +26,10 @@ logger = logging.getLogger()
 
 # File paths
 GEOJSON_FILE = r"D:\PhD\codingPractices\progress-report-dec-2024\data\raw\swiss\linie_mit_polygon\linie_mit_polygon_altered.geojson"
-OUTPUT_NODE_FILE = r"D:\PhD\codingPractices\progress-report-dec-2024\sumo\inputs\sw_real_comp\sw_real_compV2.nod.xml"
-OUTPUT_EDGE_FILE = r"D:\PhD\codingPractices\progress-report-dec-2024\sumo\inputs\sw_real_comp\sw_real_compV2.edge.xml"
-OUTPUT_CON_FILE = r"D:\PhD\codingPractices\progress-report-dec-2024\sumo\inputs\sw_real_comp\sw_real_compV2.con.xml"
-OUTPUT_NET_FILE = r"D:\PhD\codingPractices\progress-report-dec-2024\sumo\inputs\sw_real_comp\sw_real_compV2.net.xml"
+OUTPUT_NODE_FILE = r"D:\PhD\codingPractices\progress-report-dec-2024\sumo\inputs\sw_real_comp\sw_real_comp.nod.xml"
+OUTPUT_EDGE_FILE = r"D:\PhD\codingPractices\progress-report-dec-2024\sumo\inputs\sw_real_comp\sw_real_comp.edge.xml"
+OUTPUT_CON_FILE = r"D:\PhD\codingPractices\progress-report-dec-2024\sumo\inputs\sw_real_comp\sw_real_comp.con.xml"
+OUTPUT_NET_FILE = r"D:\PhD\codingPractices\progress-report-dec-2024\sumo\inputs\sw_real_comp\sw_real_comp.net.xml"
 
 # Parameters
 V_MAX_KMH = 250  # Maximum speed in km/h

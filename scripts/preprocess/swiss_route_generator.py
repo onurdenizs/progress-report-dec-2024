@@ -1,51 +1,34 @@
 import random
-import os
 import logging
 import csv
 import xml.etree.ElementTree as ET
 from xml.dom import minidom
 
 # Configure logging
-logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
+logging.basicConfig(level=logging.DEBUG, format="%(asctime)s - %(levelname)s - %(message)s")
 logger = logging.getLogger()
 
 # Input and output file paths
 LINIENR_CSV_FILE = r"D:\PhD\codingPractices\progress-report-dec-2024\data\processed\swiss\swiss_linienr_stations.csv"
-OUTPUT_ROUTE_FILE = r"D:\PhD\codingPractices\progress-report-dec-2024\sumo\inputs\sw_real_comp\sw_real_samp.rou.xml"
+NETWORK_FILE = r"D:\PhD\codingPractices\progress-report-dec-2024\sumo\inputs\sw_real_comp\sw_real_comp.net.xml"
+OUTPUT_ROUTE_FILE = r"D:\PhD\codingPractices\progress-report-dec-2024\sumo\inputs\sw_real_comp\sw_real_comp.rou.xml"
 
 # Configurable settings
-DEFAULT_WAITING_STATIONS = ["BS", "LST", "SIS", "GKD", "OL", "ZF", "SS", "LZ"]
-DEFAULT_WAIT_TIME_RANGE = (60, 180)  # Random wait time in seconds
-DEFAULT_SPEED_RANGE = (50, 210)  # Speed range in km/h
-MIN_DEPART_TIME = 30  # Minimum departure time in seconds
-MAX_DEPART_TIME = 1000  # Maximum departure time in seconds
-MIN_DEPART_GAP = 60  # Minimum gap between train departures in seconds
+DEFAULT_WAITING_STATIONS = ["LST", "SIS", "GKD", "OL", "ZF", "SS"]
+DEFAULT_WAIT_TIME_RANGE = (60, 180)  # in seconds
+DEFAULT_SPEED_RANGE = (50, 210)      # in km/h
+DEFAULT_ACCEL_RANGE = (0.3, 1.2)     # in m/s²
+DEFAULT_DECEL_RANGE = (0.5, 2.5)     # in m/s²
+MIN_DEPART_TIME = 30
+MAX_DEPART_TIME = 1000
+MIN_DEPART_GAP = 60  # in seconds
 
 def prettify_xml(elem):
-    """
-    Prettify XML for human-readable formatting.
-
-    Args:
-        elem (xml.etree.ElementTree.Element): Root XML element.
-
-    Returns:
-        str: Prettified XML as a string.
-    """
     rough_string = ET.tostring(elem, "utf-8")
     reparsed = minidom.parseString(rough_string)
     return reparsed.toprettyxml(indent="  ")
 
 def load_linenr_stations(linenr_csv_file, linenr):
-    """
-    Load station data for a specific linienr from the CSV file.
-
-    Args:
-        linenr_csv_file (str): Path to the CSV file containing linienr and stations.
-        linenr (int): Linienr for which stations are to be fetched.
-
-    Returns:
-        list: Ordered list of stations for the linienr.
-    """
     try:
         with open(linenr_csv_file, "r", encoding="utf-8") as csvfile:
             reader = csv.DictReader(csvfile)
@@ -59,36 +42,108 @@ def load_linenr_stations(linenr_csv_file, linenr):
         raise
     raise ValueError(f"Linienr {linenr} not found in the CSV file.")
 
-def generate_routes(linenr, stations, waiting_stations, wait_time_range, speed_range, min_depart_time, max_depart_time, min_depart_gap, output_file):
-    """
-    Generate a SUMO route file with specific routes, speeds, stops, waiting times, and departure times.
+def parse_network_file(network_file):
+    edge_map = {}
+    try:
+        tree = ET.parse(network_file)
+        root = tree.getroot()
 
-    Args:
-        linenr (int): Linienr for the train.
-        stations (list): Ordered list of stations for the route.
-        waiting_stations (list): Stations where vehicles stop.
-        wait_time_range (tuple): Min and max wait times in seconds.
-        speed_range (tuple): Min and max speeds in km/h.
-        min_depart_time (int): Earliest possible departure time in seconds.
-        max_depart_time (int): Latest possible departure time in seconds.
-        min_depart_gap (int): Minimum gap between train departures in seconds.
-        output_file (str): Path to the output route file.
-    """
+        for edge in root.findall("edge"):
+            edge_id = edge.get("id")
+            if edge_id and edge_id.startswith("edge_"):
+                parts = edge_id.split("_")
+                if len(parts) == 3:
+                    start = parts[1]
+                    end = parts[2]
+                    pattern = f"{start}_{end}"
+                    edge_map.setdefault(pattern, []).append(edge_id)
+                elif len(parts) >= 4:
+                    # old fallback if needed
+                    start = parts[1]
+                    end = parts[3]
+                    pattern = f"{start}_{end}"
+                    edge_map.setdefault(pattern, []).append(edge_id)
+
+        logger.info(f"Parsed network with {len(edge_map)} unique station pairs.")
+        logger.debug(f"Sample keys: {list(edge_map.keys())[:10]}")
+        return edge_map
+
+    except Exception as e:
+        logger.error(f"Error parsing network file: {e}")
+        raise
+
+
+
+def generate_route_edges(stations, edge_map):
+    route_edges = []
+    for i in range(len(stations) - 1):
+        station1 = stations[i]
+        station2 = stations[i + 1]
+        pattern1 = f"{station1}_{station2}"
+        pattern2 = f"{station2}_{station1}"
+
+        edges = edge_map.get(pattern1) or edge_map.get(pattern2)
+        if not edges:
+            logger.warning(f"No edges found for pattern {pattern1} or {pattern2}. Skipping segment.")
+        else:
+            logger.debug(f"Edges for segment {station1}-{station2}: {edges}")
+            route_edges.extend(edges)
+
+    if not route_edges:
+        raise ValueError("No valid route edges could be generated. Check station list and edge mappings.")
+    return route_edges
+
+
+def generate_route_edges(stations, edge_map):
+    route_edges = []
+    for i in range(len(stations) - 1):
+        station1 = stations[i]
+        station2 = stations[i + 1]
+        pattern1 = f"{station1}_{station2}"
+        pattern2 = f"{station2}_{station1}"
+
+        edges = edge_map.get(pattern1) or edge_map.get(pattern2)
+        if not edges:
+            logger.warning(f"No edges found for pattern {pattern1} or {pattern2}. Skipping segment.")
+        else:
+            logger.debug(f"Edges found for segment {station1}-{station2}: {edges}")
+            route_edges.extend(edges)
+
+    if not route_edges:
+        raise ValueError("No valid route edges could be generated. Check station list and edge mappings.")
+    return route_edges
+
+def generate_vehicle_type(root, train_num, accel_range, decel_range):
+    accel = round(random.uniform(*accel_range), 2)
+    decel = round(random.uniform(*decel_range), 2)
+
+    vtype_id = f"trainType_{train_num}"
+    vtype_attribs = {
+        "id": vtype_id,
+        "accel": str(accel),
+        "decel": str(decel),
+        "length": "50",
+        "maxSpeed": "70",
+        "vClass": "rail"
+    }
+    ET.SubElement(root, "vType", attrib=vtype_attribs)
+    return vtype_id
+
+def generate_routes_with_stops(linenr, stations, edge_map, waiting_stations, wait_time_range, speed_range, min_depart_time, max_depart_time, min_depart_gap, output_file):
     root = ET.Element("routes")
 
-    # Define route ID and edges
+    route_edges = generate_route_edges(stations, edge_map)
     route_id = f"route_linenr_{linenr}"
-    route_edges = " ".join(stations)
-    ET.SubElement(root, "route", id=route_id, edges=route_edges)
+    ET.SubElement(root, "route", id=route_id, edges=" ".join(route_edges))
 
-    # Generate vehicles
     depart_times = []
-    for train_num in range(1, 6):  # Five trains
-        # Generate random speed in m/s
-        min_speed, max_speed = speed_range
-        speed = round(random.uniform(min_speed, max_speed) / 3.6, 2)  # Convert km/h to m/s
 
-        # Ensure valid departure times with minimum gap
+    for train_num in range(1, 6):
+        vtype_id = generate_vehicle_type(root, train_num, DEFAULT_ACCEL_RANGE, DEFAULT_DECEL_RANGE)
+
+        min_speed, max_speed = speed_range
+        speed = round(random.uniform(min_speed, max_speed) / 3.6, 2)
+
         while True:
             if not depart_times:
                 depart_time = random.randint(min_depart_time, max_depart_time)
@@ -103,52 +158,54 @@ def generate_routes(linenr, stations, waiting_stations, wait_time_range, speed_r
                 depart_times.append(depart_time)
                 break
 
-        # If no valid depart time could be generated, skip this train
         if len(depart_times) < train_num:
             logger.warning(f"Skipping train {train_num} due to departure time constraints.")
             continue
 
-        # Define the vehicle
-        vehicle_elem = ET.SubElement(root, "vehicle", id=f"train_train_{linenr}_{train_num}", route=route_id, depart=str(depart_time), speed=str(speed))
+        vehicle_elem = ET.SubElement(
+            root,
+            "vehicle",
+            id=f"train_{linenr}_{train_num}",
+            type=vtype_id,
+            route=route_id,
+            depart=str(depart_time),
+            maxSpeed=str(speed)
+        )
 
-        # Add stops with waiting times at specific stations
-        missing_stations = []
-        for station in waiting_stations:
-            if station in stations:
-                min_wait, max_wait = wait_time_range
-                duration = random.randint(min_wait, max_wait)  # Random wait time in seconds
-                ET.SubElement(vehicle_elem, "stop", edge=station, duration=str(duration))
-            else:
-                missing_stations.append(station)
+        for stop_station in waiting_stations:
+            if stop_station in stations:
+                stop_idx = stations.index(stop_station)
+                if stop_idx > 0:
+                    station1 = stations[stop_idx - 1]
+                    station2 = stop_station
+                    pattern1 = f"{station1}_{station2}"
+                    pattern2 = f"{station2}_{station1}"
+                    edges = edge_map.get(pattern1) or edge_map.get(pattern2)
+                    if edges:
+                        stop_edge = edges[-1]
+                        duration = random.randint(*wait_time_range)
+                        ET.SubElement(vehicle_elem, "stop", edge=stop_edge, duration=str(duration))
 
-        # Log missing stations
-        if missing_stations:
-            logger.warning(f"The following stations are not part of the route for linienr {linenr}: {missing_stations}")
-
-    # Write prettified XML to output file
     try:
         prettified_xml = prettify_xml(root)
         with open(output_file, "w", encoding="utf-8") as f:
             f.write(prettified_xml)
         logger.info(f"Route file created: {output_file}")
-    except Exception as e:
+    except IOError as e:
         logger.error(f"Failed to write route file: {e}")
         raise
 
 def main():
-    """
-    Main function to generate routes for a specified linienr.
-    """
-    linenr = 500  # Example linienr
+    linenr = 500
     logger.info(f"Processing routes for linienr {linenr}...")
 
-    # Load stations for the given linienr
     stations = load_linenr_stations(LINIENR_CSV_FILE, linenr)
+    edge_map = parse_network_file(NETWORK_FILE)
 
-    # Generate routes with waiting times, speed ranges, and departure times
-    generate_routes(
+    generate_routes_with_stops(
         linenr,
         stations,
+        edge_map,
         DEFAULT_WAITING_STATIONS,
         DEFAULT_WAIT_TIME_RANGE,
         DEFAULT_SPEED_RANGE,
@@ -158,7 +215,7 @@ def main():
         OUTPUT_ROUTE_FILE
     )
 
-    logger.info("Route generation completed successfully.")
+    logger.info("Route generation and validation completed successfully.")
 
 if __name__ == "__main__":
     main()
