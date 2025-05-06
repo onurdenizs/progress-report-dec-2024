@@ -1,8 +1,7 @@
 """
 match_gtfs_stops_to_sumo_edges.py
 
-Fix: Uses 'edge_id_human' instead of 'edge_id' to write valid SUMO-compatible routes.
-
+Robust version: maps GTFS stops to SUMO edges, ensures all edge_ids are valid according to .net.xml.
 Author: GPT-4 + Onur | April 2025
 """
 
@@ -12,20 +11,29 @@ import pandas as pd
 import geopandas as gpd
 from shapely.geometry import Point
 import logging
+import xml.etree.ElementTree as ET
 
 # ----------------------------------------
 # Config paths
 # ----------------------------------------
-
 STOP_FOLDER = r"D:\PhD\codingPractices\progress-report-dec-2024\data\processed\routes\stop_sequences"
 STOPS_FILE = r"D:\PhD\codingPractices\progress-report-dec-2024\data\raw\swiss\gtfs_ftp_2025\stops.txt"
 EDGE_FILE = r"D:\PhD\codingPractices\progress-report-dec-2024\data\processed\rail_edges_named.csv"
+NET_FILE = r"D:\PhD\codingPractices\progress-report-dec-2024\sumo\inputs\april_2025_swiss\april_2025_swiss.net.xml"
 OUTPUT_FOLDER = r"D:\PhD\codingPractices\progress-report-dec-2024\data\processed\routes\mapped_rou"
 os.makedirs(OUTPUT_FOLDER, exist_ok=True)
 
 PROJECTION = "EPSG:2056"
-
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
+
+
+# ----------------------------------------
+# Load known edges from .net.xml
+# ----------------------------------------
+def load_valid_edge_ids(net_path):
+    tree = ET.parse(net_path)
+    root = tree.getroot()
+    return {edge.attrib['id'] for edge in root.findall(".//edge") if 'id' in edge.attrib}
 
 
 def load_edges(edge_path):
@@ -35,10 +43,11 @@ def load_edges(edge_path):
     return gpd.GeoDataFrame(df, geometry="geometry", crs=PROJECTION)
 
 
-def find_closest_edge(point, edge_gdf):
+def find_closest_edge(point, edge_gdf, valid_edge_ids):
     distances = edge_gdf.distance(point)
     idx = distances.idxmin()
-    return edge_gdf.loc[idx, "edge_id_human"]
+    edge_id = edge_gdf.loc[idx, "edge_id_human"]
+    return edge_id if edge_id in valid_edge_ids else None
 
 
 def build_route_file(route_id, edge_ids, output_path):
@@ -51,14 +60,17 @@ def build_route_file(route_id, edge_ids, output_path):
 
 
 def main():
-    logging.info("📍 Loading SUMO rail edge geometries...")
+    logging.info("📍 Loading rail edges...")
     edge_gdf = load_edges(EDGE_FILE)
 
-    logging.info("📥 Loading GTFS stop coordinates from stops.txt...")
+    logging.info("📥 Loading valid SUMO edge IDs from .net.xml...")
+    valid_edge_ids = load_valid_edge_ids(NET_FILE)
+    logging.info(f"✅ Loaded {len(valid_edge_ids):,} valid edge IDs")
+
+    logging.info("📥 Loading GTFS stop coordinates...")
     stops_df = pd.read_csv(STOPS_FILE, dtype={"stop_id": str})
     stops_df = stops_df.dropna(subset=["stop_lat", "stop_lon"])
     stops_df = stops_df[["stop_id", "stop_lat", "stop_lon"]].copy()
-    stops_df["stop_id"] = stops_df["stop_id"].astype(str)
 
     stop_files = glob.glob(os.path.join(STOP_FOLDER, "*.csv"))
 
@@ -68,12 +80,12 @@ def main():
 
         df = pd.read_csv(stop_file, dtype={"stop_id": str})
         if "stop_id" not in df.columns:
-            logging.warning(f"⚠️ Skipping {route_id} — no 'stop_id' found.")
+            logging.warning(f"⚠️ Skipping {route_id} — no 'stop_id' column.")
             continue
 
         merged = pd.merge(df, stops_df, on="stop_id", how="left")
         if merged["stop_lat"].isna().any():
-            logging.warning(f"⚠️ Skipping {route_id} — missing stop coordinates after merge.")
+            logging.warning(f"⚠️ Skipping {route_id} — missing coordinates.")
             continue
 
         gdf = gpd.GeoDataFrame(
@@ -84,8 +96,15 @@ def main():
 
         edge_ids = []
         for pt in gdf.geometry:
-            edge_id = find_closest_edge(pt, edge_gdf)
-            edge_ids.append(edge_id)
+            edge_id = find_closest_edge(pt, edge_gdf, valid_edge_ids)
+            if edge_id:
+                edge_ids.append(edge_id)
+            else:
+                logging.warning(f"⚠️ Skipping point — no valid edge found nearby.")
+
+        if len(edge_ids) < 2:
+            logging.warning(f"⚠️ Skipping {route_id} — not enough valid edges.")
+            continue
 
         output_path = os.path.join(OUTPUT_FOLDER, f"mapped_routes_{route_id}.rou.xml")
         build_route_file(route_id, edge_ids, output_path)
