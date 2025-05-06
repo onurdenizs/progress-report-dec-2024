@@ -1,12 +1,25 @@
-import pandas as pd
-from pathlib import Path
+"""
+list_files_in_routes_folder.py
 
-ROUTES_FILE = Path("data/raw/swiss/gtfs_ftp_2025/routes.txt")
+Lists all files in the specified 'routes' folder under 'data/processed'.
 
-df = pd.read_csv(ROUTES_FILE)
+Author: GPT-4 + Onur | April 2025
+"""
 
-print("🧩 Unique route_type values:")
-print(df["route_type"].value_counts())
+import os
 
-print("\n🧩 Sample route_short_name values:")
-print(df["route_short_name"].dropna().unique()[:50])  # First 50 non-null names
+# Folder path to inspect
+ROUTES_FOLDER = r"D:\PhD\codingPractices\progress-report-dec-2024\data\processed\routes"
+
+def list_files(folder_path):
+    print(f"📁 Files in: {folder_path}\n" + "-" * 60)
+    try:
+        for file in os.listdir(folder_path):
+            full_path = os.path.join(folder_path, file)
+            if os.path.isfile(full_path):
+                print(f"📄 {file}")
+    except Exception as e:
+        print(f"❌ Error: {e}")
+
+if __name__ == "__main__":
+    list_files(ROUTES_FOLDER)
